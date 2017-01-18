@@ -14,7 +14,7 @@ $(function () {
     }
 
     //usage:
-    readTextFile("json/data.json", function(text){
+    readTextFile("json/data3.json", function(text){
         data = JSON.parse(text);
         console.log(data);
         // Make codes uppercase to match the map data
@@ -47,19 +47,15 @@ $(function () {
             },
 
             colorAxis: {
-                min: 1,
-                type: 'logarithmic',
-                minColor: '#DF1404',
+                min: 0,
+                type: 'linear',//linear or logarithmic
+                minColor: '#FFFFFF',
                 maxColor: '#000022',
                 stops: [
-                    [0, '#ff4040'],
-                    [0.12, '#fdb9b9'],
-                    [0.25, '#EFEFFF'],
-                    [0.37, '#4444FF'],
-                    [0.50, '#000022']                ]
-                    // [0, '#EFEFFF'],
-                    // [0.67, '#4444FF'],
-                    // [1, '#000022']                ]
+                    [0, '#FFFFFF'],
+                    [0.70, '#4444FF'],
+                    [1, '#000022']
+                ]
             },
 
             series: [{
