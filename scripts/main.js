@@ -30,7 +30,7 @@ $(function () {
             },
 
             title: {
-                text: 'Switch state'
+                text: 'Swing states'
             },
 
             legend: {
